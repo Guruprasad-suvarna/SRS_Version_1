@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import "./Dashboard.css";
+import JobPost from "./JobPost.js";
+
 import { useState } from "react";
 
 export default function Dashboard() {
@@ -11,6 +13,7 @@ export default function Dashboard() {
     { name: "Job Listings", icon: "📋" },
     { name: "Open Positions", icon: "📂" },
     { name: "Interview Schedule", icon: "📅" },
+    { name: "Job Post", icon: "📅" },
   ];
 
   const renderContent = () => {
@@ -23,6 +26,8 @@ export default function Dashboard() {
         return <p> Open Positions details..</p>;
       case "Interview Schedule":
         return <p> Your interview schedule details..</p>;
+      case "Job Post":
+        return <JobPost />;
       default:
         return <p> Select an option from menu</p>;
     }
