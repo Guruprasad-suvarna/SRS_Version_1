@@ -1,0 +1,88 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+}
+
+
+.overview_greeting{
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+    
+}
+
+.overview_greeting_sub{
+    font-size: small;
+    color: rgb(144, 144, 144);
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Main Content */
+.main-content {
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Statistics Section */
+.stats {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    background-color: #b0d5f6ba;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat_icon{
+    padding: 15px;
+    margin-left: 100px;
+    font-size:x-large;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 23px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.stat span {
+
+    color: #2a2a2a;
+    font-size: small;
+}
+
+/* Job List Heading */
+.jobs h3 {
+    margin: 20px 0;
+}
