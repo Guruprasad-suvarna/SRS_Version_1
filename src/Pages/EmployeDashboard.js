@@ -54,14 +54,14 @@ const EmployeDashboard = () => {
           Here is your daily activities and applications
         </p>
         <div className="stats">
-          <div className="stat">
+          <div className="stat-1">
             <div>
               <h3>589</h3>
               <span>Open Jobs</span>
             </div>
             <p className="stat_icon">👜</p>
           </div>
-          <div className="stat">
+          <div className="stat-2">
             <div>
               <h3>2,517</h3>
               <span>Saved Candidates</span>

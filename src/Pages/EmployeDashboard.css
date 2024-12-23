@@ -1,6 +1,5 @@
 /* General Reset */
 body,
-h1,
 h2,
 h3,
 h4,
@@ -53,14 +52,24 @@ body {
     padding: 20px;
 }
 
-.stat {
+.stat-1 {
     display: flex;
     flex-direction: row;
-    background-color: #b0d5f6ba;
+    background-color: #e7f0fa;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
 }
+
+.stat-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff6e6;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 
 .stat_icon{
     padding: 15px;
@@ -70,8 +79,8 @@ body {
     border-radius: 10px;
 }
 
-.stat h3 {
-    font-size: 23px;
+.stat-1 h3, .stat-2 h3 {
+    font-size: 24px;
     color: #000000;
     font-weight: 500;
 }

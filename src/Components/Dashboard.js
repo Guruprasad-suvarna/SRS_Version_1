@@ -5,12 +5,14 @@ import JobPost from "./JobPost.js";
 import EmployeDashboard from "../Pages/EmployeDashboard.js";
 
 import { useState } from "react";
+import SavedCandidate from "./Recruiter/SavedCandidate.js";
 
 export default function Dashboard() {
   const [activeMenu, setActiveMenu] = useState("Total Applications");
 
   const menuItems = [
     { name: "Employe Dashboard", icon: "📊" },
+    { name: "Saved Candidate", icon: "📊" },
     { name: "Total Applications", icon: "📊" },
     { name: "Job Listings", icon: "📋" },
     { name: "Open Positions", icon: "📂" },
@@ -22,6 +24,8 @@ export default function Dashboard() {
     switch (activeMenu) {
       case "Employe Dashboard":
         return <EmployeDashboard />;
+      case "Saved Candidate":
+        return <SavedCandidate />;
       case "Total Applications":
         return <p> You have 150 applications in total!</p>;
       case "Job Listings":
